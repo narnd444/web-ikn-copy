@@ -5,11 +5,14 @@ import imagenews2 from "/src/assets/content/sekilas2.png";
 const Sekilassection = () => {
   return (
     <>
-    <section className="font-Gotham min-h-screen">
-    <div className="flex min-h-screen mt-10 justify-between max-h-screen">
-        <div className="flex flex-col basis-2/6 my-10 ml-12 max-w-xs">
-            <div className="mb-3">
+    <section className="font-Gotham  min-h-screen w-full">
+    <div className="flex min-h-screen mt-10 justify-center md:justify-between max-h-screen">
+        <div className="flex flex-col basis-full md:basis-2/6 my-10 md:ml-12 max-w-xs">
+            <div className="mb-2 md:mb-3">
                 <h1 className="font-normal mb-3 text-xl text-slate-950/50">Sekilas IKN</h1>
+                <div className="flex md:hidden justify-end my-2 w-full">
+                    <img src={imagenews} alt="" />
+                </div>
                 <h1 className="font-medium text-2xl">Smart Lighting</h1>
             </div>
             <div className="flex flex-col justify-between h-screen ">
@@ -23,20 +26,23 @@ const Sekilassection = () => {
         </button>
             </div>
         </div>
-        <div className="flex justify-end basis-5/6 ml-10 w-full">
+        <div className="hidden md:flex justify-end basis-5/6 ml-10 w-full">
             <img src={imagenews} alt="" />
         </div>
     </div>
     </section>
 
     <section className="font-Gotham min-h-screen">
-    <div className="flex min-h-screen justify-between max-h-screen">
-    <div className="flex justify-end basis-5/6 mr-10 w-full">
-            <img src={imagenews2} alt="" />
-        </div>
-        <div className="flex flex-col basis-2/6 my-10 mr-8 max-w-xs">
+    <div className="flex min-h-screen justify-center md:justify-between max-h-screen">
+        <div className="hidden md:flex justify-end basis-5/6 mr-10 w-full">
+                <img src={imagenews2} alt="" />
+            </div>
+        <div className="flex flex-col md:basis-2/6 my-10 md:mr-8 max-w-xs">
             <div className="mb-3">
                 <h1 className="font-normal mb-3 text-xl text-slate-950/50">Sekilas IKN</h1>
+                    <div className="flex md:hidden w-full">
+                    <img src={imagenews2} alt="" />
+                    </div>
                 <h1 className="font-medium text-2xl">Smart City</h1>
             </div>
             <div className="flex flex-col justify-between h-screen ">

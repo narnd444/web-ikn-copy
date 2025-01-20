@@ -32,7 +32,7 @@ const Timelinesection = () => {
   
 
   return (
-    <section className="py-1 font-Gotham flex flex-col justify-center items-center max-w-screen max-h-max h-max">
+    <section className="py-1 font-Gotham flex flex-col justify-center items-center w-full max-h-max h-max">
       <div className="flex mt-20">
         <h1 className="text-primary text-2xl font-medium">Tonggak Sejarah Menuju 2045</h1>
         </div>
@@ -41,40 +41,35 @@ const Timelinesection = () => {
          {timelineData
           .filter((item) => item.id <= visibleId)
           .map((item) => (
+            
           <div
             key={item.id}
-            className={`flex items-start w-full max-w-5xl space-x-7 my-6  space-y-2 relative transition-all duration-150 `}
-          >
-            {/* Gambar di kiri */}
+            className={`flex flex-col space-y-4 p-7 md:p-2`}
+          > 
+          <div className="flex items-start w-full max-w-5xl px-6 md:p-0 space-x-7 md:my-6   relative transition-all duration-150">
             <div className="flex-shrink-0">
               <img
                 src={item.image}
                 alt={item.title}
-                className="min-w-72 min-h-44 max-h-44 max-w-72 object-fill rounded-md border-2 border-gray-300"
+                className="md:min-w-72 md:min-h-44 md:max-h-44 md:max-w-72 h-28 object-fill rounded-md border-2 border-gray-300"
               />
             </div>
-
-            {/* Titik dan garis timeline */}
-            <div className="flex flex-col items-center mx-6 relative">
-              {/* Titik timeline */}
+            <div className="line hidden md:flex flex-col items-center mx-6 relative">
               <div className="w-4 h-4 bg-primary rounded-full border-2 border-white z-10"></div>
-
-              {/* Garis vertikal */}
-              
-                <div className="w-1 bg-slate-300 -mt-8 h-60 absolute opacity-50"></div>
-              
+                <div className="w-1 bg-slate-300 -mt-10 h-64 absolute opacity-40"></div>
             </div>
-
-            {/* Deskripsi di kanan */}
             <div className="flex flex-col ">
               <h2 className="text-xl font-normal text-primary">{item.date}</h2>
               <h2 className="text-xl font-bold text-gray-800">{item.title}</h2>
-              <p className="text-gray-600 mt-2">{item.description}</p>
+              <p className="hidden md:flex text-gray-600 mt-2">{item.description}</p>
             </div>
           </div>
+          <p className="flex md:hidden text-sm px-6 text-gray-600 mt-2">{item.description}</p>
+          </div>
+         
         ))}
   {visibleId < timelineData.length && (
-          <div className="overlay transition-all duration-500 flex absolute inset-x-0 justify-center items-end h-64 bottom-0 bg-gradient-to-t from-white to-slate-50/45 z-11 w-screen">
+          <div className="overlay transition-all duration-500 flex absolute inset-x-0 justify-center items-end h-48 md:h-64 bottom-0 bg-gradient-to-t from-white to-slate-50/45 z-11 w-full">
           <button
             onClick={() => setVisibleId(visibleId + 1)}
             className="text-sm mt-4 px-12 py-2 hover:bg-black hover:text-white transition-all duration-500 border-2 border-black text-black rounded-md"
