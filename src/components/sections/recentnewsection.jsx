@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import bgLogo from "/src/assets/logo/logo.svg";
-
+import new1 from "/src/assets/content/news.png";
+import new2 from "/src/assets/content/news-2.png";
+import new3 from "/src/assets/content/news-3.png";
+import new4 from "/src/assets/content/news-4.jpeg";
 const Recentsection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true); // State for fade animation
@@ -10,22 +13,22 @@ const Recentsection = () => {
     {
       id: 1,
       judul1: "Otorita IKN Jalin Kerja Sama dengan Bank Mandiri untuk Hadirkan Solusi Keuangan",
-      gambar1: "/src/assets/content/news.png",
+      gambar1: new1,
       Content1: "2022-2024, akan dilakukan pemindahan tahap awal ke Kawasan IKN...",
       Date1: "23 Agustus 2023",
       judul2: "Pelantikan Kepala dan Wakil Kepala IKN",
-      gambar2: "/src/assets/content/news-2.png",
+      gambar2: new2,
       Content2: "2022-2024, akan dilakukan pemindahan tahap awal ke Kawasan IKN...",
       Date2: "23 Agustus 2023",
     },
     {
       id: 2,
       judul1: "Otorita IKN Jalin Kerja Sama dengan Bank Mandiri untuk Hadirkan Solusi Keuangan",
-      gambar1: "/src/assets/content/news-2.png",
+      gambar1: new3,
       Content1: "2022-2024, akan dilakukan pemindahan tahap awal ke Kawasan IKN...",
       Date1: "23 Agustus 2023",
       judul2: "Pelantikan Kepala dan Wakil Kepala IKN",
-      gambar2: "/src/assets/content/news-3.png",
+      gambar2: new4,
       Content2: "2022-2024, akan dilakukan pemindahan tahap awal ke Kawasan IKN...",
       Date2: "23 Agustus 2023",
     },

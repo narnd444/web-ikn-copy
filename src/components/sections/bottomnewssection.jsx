@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion";
-
+import bnews1 from "/src/assets/content/news-3.png" ;
+import bnews2 from "/src/assets/content/news.png" ;
+import bnews3 from "/src/assets/content/news-2.png" ;
+import bnews4 from "/src/assets/content/news-4.jpeg" ;
 const NewsbottomSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -9,7 +12,7 @@ const NewsbottomSection = () => {
     {
       id: 1,
       judul: "Pelantikan Kepala dan Wakil Kepala IKN",
-      gambar: "/src/assets/content/news-3.png",
+      gambar: bnews1,
       topContent:
         "Kawasan IKN akan dibangun dengan prosentase tujuh puluh lima kawasan hijau dikawan pemerintahan IKN. Hal ini menjadikan seratus persen penduduk dapat mengakses ruang terbuka hijau rekreasi dalam waktu sepuluh menit dan setiap bangunan bertingkat institusional, komersial dan hunian dikonsepkan konstruksi ramah lingkungan.",
       BottomContent:
@@ -19,7 +22,7 @@ const NewsbottomSection = () => {
     {
       id: 2,
       judul: "Otorita IKN Jalin Kerja Sama dengan Bank Mandiri untuk Hadirkan Solusi Keuangan",
-      gambar: "/src/assets/content/news.png",
+      gambar: bnews2,
       topContent:
         "Kawasan IKN akan dibangun dengan prosentase tujuh puluh lima kawasan hijau dikawan pemerintahan IKN. Hal ini menjadikan seratus persen penduduk dapat mengakses ruang terbuka hijau rekreasi dalam waktu sepuluh menit dan setiap bangunan bertingkat institusional, komersial dan hunian dikonsepkan konstruksi ramah lingkungan.",
       BottomContent:
@@ -29,7 +32,7 @@ const NewsbottomSection = () => {
     {
       id: 3,
       judul: "Pelantikan Kepala dan Wakil Kepala IKN",
-      gambar: "/src/assets/content/news-2.png",
+      gambar: bnews3,
       topContent:
         "Kawasan IKN akan dibangun dengan prosentase tujuh puluh lima kawasan hijau dikawan pemerintahan IKN. Hal ini menjadikan seratus persen penduduk dapat mengakses ruang terbuka hijau rekreasi dalam waktu sepuluh menit dan setiap bangunan bertingkat institusional, komersial dan hunian dikonsepkan konstruksi ramah lingkungan.",
       BottomContent:
@@ -39,7 +42,7 @@ const NewsbottomSection = () => {
     {
       id: 4,
       judul: "Pelantikan Kepala dan Wakil Kepala IKN",
-      gambar: "/src/assets/content/news-4.jpeg",
+      gambar: bnews4,
       topContent:
         "Kawasan IKN akan dibangun dengan prosentase tujuh puluh lima kawasan hijau dikawan pemerintahan IKN. Hal ini menjadikan seratus persen penduduk dapat mengakses ruang terbuka hijau rekreasi dalam waktu sepuluh menit dan setiap bangunan bertingkat institusional, komersial dan hunian dikonsepkan konstruksi ramah lingkungan.",
       BottomContent:

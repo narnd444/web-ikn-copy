@@ -1,5 +1,8 @@
 import React from "react";
 import { useState } from "react";
+import Timeline1 from "/src/assets/content/timeline-1.png";
+import Timeline2 from "/src/assets/content/timeline-2.png";
+import Timeline3 from "/src/assets/content/timeline-3.jpeg";
 
 const Timelinesection = () => {
   const timelineData = [
@@ -8,21 +11,21 @@ const Timelinesection = () => {
       date:'2022-2024',
       title: "Pemindahan Tahap Awal",
       description: "Pemindahan tahap awal ke Kawasan IKN (K-IKN), membangun infrastruktur utama seperti Istana Kepresidenan, Gedung MPR/DPR RI dan perumahan, juga meliputi pemindahan ASN tahap awal, pembangunan dan beroperasinya infrastruktur dasar untuk 500 ribu penduduk tahap awal. Presiden Republik Indonesia akan merayakan HUT Ke-79 RI di K-IKN pada 17 Agustus 2024. ",
-      image: "/src/assets/content/timeline-1.png",
+      image: Timeline1,
     },
     {
       id: 2,
       date:'2024-2035',
       title: "Pembangunan Area Inti",
       description: "Membangun IKN sebagai area inti yang tangguh, mengembangkan fase kota berikutnya seperti pusat inovasi dan ekonomi, menyelesaikan pemindahan pusat pemerintahan IKN, mengembangkan sektor- sektor ekonomi prioritas, menerapkan sistem insentif untuk sektor-sektor ekonomi prioritas, serta mencapai Tujuan Pembangunan Berkelanjutan.",
-      image: "/src/assets/content/timeline-2.png",
+      image: Timeline2,
     },
     {
       id: 3,
       date:'2035-2039',
       title: "Pembangunan Ekosistem",
       description: "Fokus pembangunannya pada infrastruktur dan ekosistem di tiga kota untuk mempercepat pembangunan Kalimantan. Cakupannya pada pengembangan bidang pendidikan kesehatan. Kemudian penguatan ketahanan sosial-budaya masyarakat serta peningkatan kapasitas lembaga pendidikan dan riset. Penambahan kapasitas infrastruktur dasar seiring bertambahnya populasi. Terakhir peningkatan kapasitas dan diversifikasi klastes.",
-      image: "/src/assets/content/timeline-3.jpeg",
+      image: Timeline3,
     },
   ];
   
