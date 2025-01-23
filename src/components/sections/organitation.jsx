@@ -8,7 +8,11 @@ import { EffectCoverflow, Navigation, Autoplay } from "swiper/modules";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import BackgroundOrg from "/src/assets/background/pseudo-patern.png";
-
+import AvatarJokowi from "/src/assets/avatar/jokowi.png";
+import AvatarBashuki from "/src/assets/avatar/bashuki.png";
+import AvatarSoekarno from "/src/assets/avatar/soekarno.png";
+import AvatarSoeharto from "/src/assets/avatar/soeharto.png";
+import AvatarSby from "/src/assets/avatar/sby.png";
 const OrganitationSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const swiperRef = useRef(null);
@@ -16,7 +20,7 @@ const OrganitationSection = () => {
   const slides = [
     {
       id: 1,
-      image: "/src/assets/avatar/jokowi.png",
+      image: {AvatarJokowi},
       name: "Joko Widodo",
       title: "Presiden Republik Indonesia",
       caption:
@@ -25,7 +29,7 @@ const OrganitationSection = () => {
     },
     {
       id: 2,
-      image: "/src/assets/avatar/bashuki.png",
+      image: {AvatarBashuki},
       name: "Basuki Hadimuljono",
       title: "Menteri PUPR",
       caption:
@@ -34,7 +38,7 @@ const OrganitationSection = () => {
     },
     {
       id: 3,
-      image: "/src/assets/avatar/soekarno.png",
+      image: {AvatarSoekarno},
       name: "Soekarno",
       title: "Presiden Ke-1 Republik Indonesia",
       caption:
@@ -43,7 +47,7 @@ const OrganitationSection = () => {
     },
     {
       id: 4,
-      image: "/src/assets/avatar/soeharto.png",
+      image: {AvatarSoeharto},
       name: "Soeharto",
       title: "Presiden Ke-2 Republik Indonesia",
       caption:
@@ -52,7 +56,7 @@ const OrganitationSection = () => {
     },
     {
       id: 5,
-      image: "/src/assets/avatar/sby.png",
+      image: {AvatarSby},
       name: "Susilo Bambang Yudhoyono",
       title: "Presiden ke-6 Republik Indonesia",
       caption:
