@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <header
-      className={`header flex fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`flex fixed w-full z-50 transition-all duration-300 ${
         isScrolled ? "bg-primary shadow-lg" : "bg-transparent"
       }`}
     >
@@ -118,7 +118,7 @@ const Header = () => {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="mobile-menu md:hidden bg-primary text-white fixed top-0 left-0 w-full h-screen flex flex-col items-center justify-center space-y-6">
+        <div className="mobile-menu md:hidden bg-primary text-white fixed w-full h-screen flex flex-col items-center justify-center space-y-6">
           <a
             href="#beranda"
             className="mobile-nav-item text-lg relative  w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
