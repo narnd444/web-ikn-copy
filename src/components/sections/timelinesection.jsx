@@ -49,7 +49,7 @@ const Timelinesection = () => {
             key={item.id}
             className={`flex flex-col space-y-4 p-7 md:p-2`}
           > 
-          <div className="flex items-start w-full max-w-5xl px-6 md:p-0 space-x-7 md:my-6   relative transition-all duration-150">
+          <div className="flex items-start w-full max-w-5xl px-2 md:px-6 md:p-0 space-x-3 md:space-x-7 md:my-6   relative transition-all duration-150">
             <div className="flex-shrink-0">
               <img
                 src={item.image}

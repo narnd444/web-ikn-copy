@@ -10,7 +10,7 @@ const Herosection = () => {
 
   return (
     <section
-      className="hero-section font-Gotham relative w-full h-screen bg-cover bg-hero-background bg-center"
+      className="hero-section font-Gotham relative w-full h-screen bg-cover bg-hero-background bg-center bg-no-repeat"
       id="beranda"
     >
       {/* Background overlay atas */}
