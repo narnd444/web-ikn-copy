@@ -89,7 +89,7 @@ const OrganitationSection = () => {
       </div>
        
       <div className="h-full flex flex-col relative w-full ">
-        <h1 className="mb-16 mt-20 text-center text-3xl font-medium text-primary">
+        <h1 className="mb-16 mt-20 text-center text-xl md:text-3xl font-medium text-primary">
           Menyambut Ibu Kota Nusantara
         </h1>
         <div className="flex items-center w-full">

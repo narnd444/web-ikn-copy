@@ -158,7 +158,6 @@ const IdentitySection =()=>{
     depth: 0,
     modifier: 0.4,
     slideShadows: false,}}
-  spaceBetween={1}
   
   breakpoints={{
     640: { slidesPerView: 2, spaceBetween: 0 }, // 1 slide untuk layar kecil

@@ -23,10 +23,10 @@ const Footer = () =>{
         </div>
         <div className="footer-b relative flex m-0 bg-slate-200 w-full min-h-16 max-h-16 ">
             <div className="background flex w-full">
-                <img src={Patern} alt="" className="w-full h-full object-cover"/>
-                <img src={Patern} alt="" className="w-full h-full object-cover" />
+                <img src={Patern} alt="" className="w-6/12 h-full object-cover"/>
+                <img src={Patern} alt="" className="w-6/12 h-full object-cover" />
             </div>
-            <div className="overlay flex absolute inset-0 px-5 md:px-10 items-center justify-between space-x-2 bg- w-full">
+            <div className="overlay flex absolute inset-0 px-5 md:px-10 items-center justify-between space-x-2 ">
                 <div className="text  flex text-xs md:pl-16 space-x-10 md:text-sm text-black">
                     <h1>©2023 Copyright Ibu Kota Negara</h1>
                     <h1>Privacy Policy</h1>
